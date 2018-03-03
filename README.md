@@ -58,6 +58,7 @@ cd /demo
 git clone https://github.com/simonellistonball/metron-field-demos.git
 ```
 
+```
 [root@demo metron-field-demos]# vi setup-full-dev.sh
 [root@demo metron-field-demos]# cat setup-full-dev.sh
 #!/bin/sh
@@ -65,6 +66,8 @@ git clone https://github.com/simonellistonball/metron-field-demos.git
 export METRON_HOST=demo.hortonworks.com
 export ES_URL=http://demo.hortonworks.com:9200
 export REST_URL=http://${METRON_HOST}:8082
+
+```
 
 ```
 [root@demo metron-field-demos]#. ./setup-full-dev.sh
@@ -146,6 +149,7 @@ $METRON_HOME/bin/zk_load_configs.sh -z $ZOOKEEPER -m PATCH -c PROFILER -pf profi
 Next is to update the es.json file by adding the following updates. 
 
 [root@demo auth]# diff es.json es.json.orig
+```
 171,173c171
 <           "type": "text",
 <           "index": true,
@@ -158,6 +162,7 @@ Next is to update the es.json file by adding the following updates.
 <           "fielddata": true
 ---
 >           "type": "text"
+```
 
 ### Loading data in Metron and ElasticSearch
 
@@ -187,5 +192,5 @@ cd /demo/metron-field-demos/auth/remote
 
 ### The End
 
-If all is good you could check the data in Metron
+If all is good you could check the data in Metron (I'll upload the updated files as well)
 
