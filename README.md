@@ -6,6 +6,7 @@ This is a simple HOWTO to explain how to deploying Metron's auth demo on a singl
 2. The minimum instance requirements are: 8 vCPUs, 32GB RAM, 400GB SSD
 3. You have basic understanding how-to navigate in Ambari
 
+All credits to Simon who prepared and uploaded the demos at  https://github.com/simonellistonball/metron-field-demos !!
 
 ## Getting Started
 
