@@ -25,17 +25,17 @@ Restart Storm
 
 Elastic (changes)
 
-gateway_recover_after_data_nodes -  From 3 to 1
-index_number_of_replicas - From 2 to 0
-index_number_of_shards - From 4 to 1
-masters_also_are_datanodes - From false to true
-expected data nodes - 1
-Elastic stop/Elastic start
+* gateway_recover_after_data_nodes -  From 3 to 1
+* index_number_of_replicas - From 2 to 0
+* index_number_of_shards - From 4 to 1
+* masters_also_are_datanodes - From false to true
+* expected data nodes - 1
+* Elastic stop/Elastic start
 
-Create - Storm View -- via Ambari
-Install - Kibana Load Template
-Install - Elastic Search Template 
-Install - Zeppelin Notebook Import
+* Create - Storm View -- via Ambari
+* Install - Kibana Load Template
+* Install - Elastic Search Template 
+* Install - Zeppelin Notebook Import
 
 To Fix Metron Indexing please do the following steps as a root user:
 
