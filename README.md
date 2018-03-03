@@ -6,6 +6,7 @@ This is a simple HOWTO to explain how to deploying Metron's auth demo on a singl
 2. The minimum instance requirements are: 8 vCPUs, 32GB RAM, 400GB SSD
 3. You have basic understanding how-to navigate in Ambari
 
+All credits to Simon who prepared and uploaded the demos at  https://github.com/simonellistonball/metron-field-demos !!
 
 ## Getting Started
 
@@ -20,22 +21,22 @@ In Ambari check if all services are running and start the ones that are not. Exa
 
 Storm (changes)
 
-Storm Slots 0/4 free. added more supervisor.slots.ports [6700, 6701, 6702, 6703, 6704,  6705,  6706,  6707,  6709]
-Restart Storm
+* Storm Slots 0/4 free. add more supervisor.slots.ports [6700, 6701, 6702, 6703, 6704,  6705,  6706,  6707,  6709]
+* Restart Storm
 
 Elastic (changes)
 
-gateway_recover_after_data_nodes -  From 3 to 1
-index_number_of_replicas - From 2 to 0
-index_number_of_shards - From 4 to 1
-masters_also_are_datanodes - From false to true
-expected data nodes - 1
-Elastic stop/Elastic start
+* gateway_recover_after_data_nodes -  From 3 to 1
+* index_number_of_replicas - From 2 to 0
+* index_number_of_shards - From 4 to 1
+* masters_also_are_datanodes - From false to true
+* expected data nodes - 1
+* Elastic stop/Elastic start
 
-Create - Storm View -- via Ambari
-Install - Kibana Load Template
-Install - Elastic Search Template 
-Install - Zeppelin Notebook Import
+* Create - Storm View -- via Ambari
+* Install - Kibana Load Template
+* Install - Elastic Search Template 
+* Install - Zeppelin Notebook Import
 
 To Fix Metron Indexing please do the following steps as a root user:
 
