@@ -21,8 +21,8 @@ In Ambari check if all services are running and start the ones that are not. Exa
 
 Storm (changes)
 
-Storm Slots 0/4 free. added more supervisor.slots.ports [6700, 6701, 6702, 6703, 6704,  6705,  6706,  6707,  6709]
-Restart Storm
+* Storm Slots 0/4 free. added more supervisor.slots.ports [6700, 6701, 6702, 6703, 6704,  6705,  6706,  6707,  6709]
+* Restart Storm
 
 Elastic (changes)
 
