@@ -10,8 +10,7 @@ All credits to Simon who prepared and uploaded the demos at  https://github.com/
 
 ## Getting Started
 
-Login in Ambari. If you do not have credentials use cli to update ambari password (from linux terminal in Ambari server host:
-ambari-admin-password-reset).
+Login in Ambari. To reset the password follow https://community.hortonworks.com/questions/449/how-to-reset-ambari-admin-password.html
 
 ### Prerequisites
 
